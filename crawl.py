@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """CLI entrypoint for the VN-Index crawler.
 
-Usage examples are in the project README. This script supports four subcommands:
+Usage examples are in the project README. This script supports subcommands:
 - `symbols` to fetch or load symbol lists
 - `historical` to fetch historical OHLC for one or more symbols (uses cafef API by default)
 - `fundamental` to fetch fundamental data (P/E, ROE, EPS, etc.) from TCBS API
 - `realtime` to poll symbols and append realtime rows
+
 """
 import argparse
 from crawler import symbols as symbols_mod
